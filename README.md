@@ -65,6 +65,13 @@ Next, install the library by using the following command in your **`terminal`**:
 npm i ngx-cumulio
 ```
 
+OR
+
+```bash
+ng add ngx-cumulio@latest
+# this will also add an entry in app.module.ts
+```
+
 install dependencies if they are not yet installed
 
 ```bash
@@ -93,11 +100,13 @@ import { NgxCumulioModule } from 'ngx-cumulio';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    // Declare library
-    NgxCumulioModule
+    AppComponent
   ],
-  imports: [BrowserModule],
+  imports: [
+    BrowserModule,
+    // Import library
+    NgxCumulioModule.forRoot()
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
