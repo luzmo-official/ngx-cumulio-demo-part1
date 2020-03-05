@@ -2,15 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NgxCumulioComponent } from 'ngx-cumulio';
+import { NgxCumulioModule } from 'ngx-cumulio';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NgxCumulioComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxCumulioModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
