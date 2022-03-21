@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NgxCumulioModule } from 'ngx-cumulio';
+import { NgxCumulioDashboardModule } from '@cumul.io/ngx-cumulio-dashboard';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import { NgxCumulioModule } from 'ngx-cumulio';
   ],
   imports: [
     BrowserModule,
-    NgxCumulioModule.forRoot()
+    NgxCumulioDashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
